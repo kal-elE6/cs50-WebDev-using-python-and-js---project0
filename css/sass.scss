@@ -1,0 +1,60 @@
+$font1: "Anonymous Pro";
+$color: #fff;
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: $color;
+}
+
+.navbar-light .navbar-nav .nav-link{
+	color: $color;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	color: $color;
+
+}
+
+.navbar-light .navbar-brand:hover{
+	color: $color;
+}
+
+.navbar-light .navbar-toggler{
+	color: $color;
+}
+
+// scss nesting
+.carousel-caption{
+	bottom: 270px;
+	
+	h5{
+		font-size: 45px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	p{
+		width: 75%;
+		margin: auto;
+		font-size: 18px;
+		line-height: 1.9;
+	}
+
+}
+
+*{
+	font-family: $font1;
+}
+
+
+%image-shared {
+	height: 75vh;
+	margin-top: 20px;
+}
+
+#travel img{
+	@extend %image-shared;
+}
+
+#food img{
+	@extend %image-shared;
+}

@@ -1,0 +1,188 @@
+/* carousel */
+.carousel-item{
+	height: 100vh;
+	/* min-height: 500px; */
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+	.carousel-item {
+		height: auto;
+		/* min-height: 500px; */
+		background: no-repeat center center scroll;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+  }
+
+
+/* navbar */
+.navbar-light .navbar-brand{
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+/* about page */
+#about .header-text{
+	text-transform: uppercase;
+    font-family: "Anonymous Pro";
+	margin-bottom: 20px;
+	margin-top: 20px;
+    text-align: center;
+    font-size: 45px;
+}
+
+#adventure .header-text{
+	text-transform: uppercase;
+    font-family: "Anonymous Pro";
+	margin-bottom: 20px;
+	margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#adventure .column{
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+#adventures .column img {
+	opacity: 0.8; 
+	cursor: pointer; 
+  }
+
+#adventures .column img:hover {
+	opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  #adventures .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* The expanding image container */
+  .big {
+	position: relative;
+	display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+	padding-left: 5px;
+  }
+  
+  /* Closable button inside the expanded image */
+ #large .closebtn {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+  }
+
+/* footer */
+
+/* .page-footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+} */
+
+/* travel section */
+/* #travel img{
+	height: 75vh;
+	margin-top: 20px;
+} */
+
+#travel h2{
+	text-transform: uppercase;
+    font-family: "Anonymous Pro";
+	margin-bottom: 20px;
+	margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* @media only screen and (max-width: 600px) {
+	#travel h2 p{
+		text-align: center;
+	}
+  } */
+
+
+/* travel image */
+.trim-container{
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+#trim .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  #trim .column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+#trim .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+
+#trim .column img:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite; 
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	#trim .column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	#trim .column {
+	    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+	}
+  }
+  
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
